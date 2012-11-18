@@ -35,11 +35,6 @@ server {
         try_files $uri $uri/ /index.php;
     }
 
-    # Proxy requests to Hostmanager server
-    location /_hostmanager/ {
-        proxy_pass http://127.0.0.1:8999/;
-    }
-
     # Process PHP requests with PHP-FPM
     location ~* .php$ {
         try_files $uri $uri/ /index.php =404; # Exploit defence

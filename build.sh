@@ -12,7 +12,7 @@ sudo yum -y update
 
 # Overwrite files in /etc and /opt
 sudo mkdir /tmp/build
-sudo git clone git://github.com/rubas/elasticbeanstalk-nginx-php.git /tmp/build
+sudo git clone git://github.com/musicalbee/bootstrap-nginx-phpfpm-yii.git /tmp/build
 sudo cp -rf /tmp/build/etc /
 
 # Install Composer
